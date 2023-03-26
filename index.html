@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+            <link rel="shortcut icon" href="images/c-logo.jpg" />
+            <link rel="stylesheet" href="style.css" />
+            <link rel="stylesheet" href="fontawesome-free-5.6.1\fontawesome-free\css\all.min.css"/>
+            <title>COFFEE LANDING PAGE</title>
+        </head>
+  <body>
+
+
+    <nav>
+		<div class="heading">
+            <img src="images/c-logo.jpg" alt="coffee logo"> Coffee Cup </div>
+		<!-- <span class="sideMenuButton"
+			onclick="openNavbar()">☰</span> -->
+
+		<div class="navbar">
+			<ul>
+				<li><a href="#Home">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+
+    <!-- Side navigation bar for
+		responsive website -->
+	<!-- <div class="sideNavigationBar"
+    id="sideNavigationBar">
+    <a href="#" class="closeButton"
+        onclick="closeNavbar()">
+        
+    </a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Sign Up</a>
+</div> -->
+
+
+
+
+        <section class="landing">
+        <div class="landing-inner">
+            <!-- <img src="images/coffe.jpg" alt="guitar"> -->
+            <h2>IT'S NOT JUST A COFFEE</h2>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+            blanditiis<br />
+            iusto hic porro quam nobis repudiandae nulla, aliquid impedit ipsum.
+            </p>
+            <h1>Subscribe To our News Letter</h1>
+
+            <form name="RegForm"  action="#">
+
+                <div class="input1">
+					<div class="label1">Your Name</div>
+					<div class="input2">
+						<input type="text" name="fullName" id="fullName" placeholder="Enter your Name here" required>
+					</div>
+					<div class="label1">
+						<label>Your Email</label>
+					</div>
+					<div class="input2">
+						<input type="text" name="email" id="Email" placeholder="Enter your Email here" onblur="emailvalidate()" required>
+					</div>
+					<!-- <div class="label1">
+						<label>Your Password</label>
+					</div>
+					<div class="input2">
+						<input type="text"
+							placeholder="Enter your Password here">
+					</div> -->
+					<div class="button">
+						<button type="submit" onclick="formvalidate()">Subscribe</button>
+					</div>
+				</div>
+                </form>
+            </div>
+        </div>
+        </section>
+
+            <section class="landing-body">follow us here
+                <br/>
+                <!-- <p>&nbsp;</p> -->
+            <i class=" fab fa-instagram" title="instagram"></i>
+            <i class=" fab fa-whatsapp" title="whatsapp"></i>
+            <i class=" fab fa-facebook" title="facebook"></i>
+        </section>
+            <footer>Created by Debbie | copyright &copy; 2023</footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

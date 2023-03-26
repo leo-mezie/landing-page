@@ -1,0 +1,368 @@
+
+*{
+    box-sizing:border-box;
+}
+
+html, body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#fff;
+    background-color: rgb(84, 10, 10);
+    overflow:hidden;
+}
+
+
+/* nav */
+nav {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 5%;
+	background-color: rgb(84, 10, 10);
+}
+.box{
+    /* background-color: #040465; */
+    color:#fff;
+    
+}
+
+nav .heading {
+	font-size: 30px;
+	font-weight: 700;
+	color: white;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	padding: 8px 15px;
+	border-radius: 10px;
+	transition: 0.2s ease-in;
+}
+
+.side2{
+    box-shadow:30px 0px 30px rgba(0,0,0,0.2),
+    -30px 0px 30px rgba(0,0,0,0.1);
+    border-radius:2;
+}
+
+nav ul li a {
+	color: black;
+	font-size: 17px;
+	font-weight: 500;
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li:hover {
+	background-color: #fff;
+    color: rgb(84, 10, 10);
+}
+
+nav ul li a:hover {
+	/* background-color: #fff; */
+    color: rgb(84, 10, 10);
+}
+
+nav .sideMenuButton {
+	font-size: 30px;
+	font-weight: bolder;
+	cursor: pointer;
+	display: none;
+}
+
+/* nav end */
+
+.fa-whatsapp{
+    color:rgb(26, 169, 26);
+}
+
+.fa-facebook{
+    color:rgb(26, 74, 169);
+}
+
+.fa-instagram{
+    color:rgb(186, 69, 196);
+}
+
+
+
+.fab{
+    font-size: 2rem;
+    /* margin-left:10rem; */
+    padding:0;
+}
+
+
+.landing-body{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.landing-body p{
+    text-align: center;
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    font-size: 3rem;
+    /* margin-bottom: -4rem; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+}
+
+
+.heading img{
+    border-radius:10rem;
+    width:3.5rem;
+    height:7vh;
+    margin-top: -.7rem;
+}
+
+.heading{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content{
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+.button button {
+    background-color: transparent;
+	width: 162px;
+	height: 35px;
+	border-radius: 5px;
+    margin-top: .7rem;
+	border-color: #fff;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button button:hover{
+	background-color: rgb(84, 10, 10);
+	color:#fff;
+	font-weight:bold;
+    opacity:80%;
+}
+
+/* bkos its the parent(container )of landing inner */
+.landing{
+    position:relative;
+    background-image:url(images/coffe.jpg);
+    background-size:cover;
+    background-position:center;
+    height:75vh;
+
+}
+
+.input1 input{
+    width: 18em;
+    color:#fff;
+    font-weight: bold;
+    outline: none;
+    margin-top: 1.2em;
+    height: 5vh;
+    border-color:#fff ;
+    background-color: transparent;
+}
+
+
+/* the a in rgba is an alpha value for setting opacity
+bkos rgb cant work for transparency */
+.landing-inner{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    text-align: center;
+    padding-top:50px;
+   
+
+}
+
+img{
+    height: 13rem;
+    
+}
+
+.landing h1{
+    font-size:30px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.landing p
+{
+font-size:20px;
+}
+
+.countdown{
+    display:flex;
+   justify-content:center;
+   align-items:center;
+   font-size:50px;
+
+}
+
+.countdown div{
+    padding:15px;
+    border:1px solid #fff;
+    border-radius:7px;
+    margin:6px;
+    opacity:.6;
+    background:rgb(0,0,0);
+
+}
+
+.countdown span{
+    display:block;
+    font-size:1.5rem
+}
+
+.countdown div:first-child{
+    background:orange;
+}
+
+@media(max-width:650px){
+    img{
+        height:20%;
+    }
+
+    .landing h1{
+        font-size:35px
+    }
+
+    .countdown div{
+    
+        font-size:17px;
+    }
+
+    .countdown span{
+      
+        font-size:17px;
+    }
+
+    .input1{
+        display:block;
+    }
+
+    .input1 input{
+        width: 18em;
+        color:#fff;
+        font-weight: bold;
+        outline: none;
+        margin-top: 1.2em;
+        height: 5vh;
+        border-color:#fff ;
+        background-color: transparent;
+    }
+
+}
+
+@media(max-width:400px){
+    img{
+        height:20%;
+    }
+
+    .landing h1{
+        font-size:35px
+    }
+
+    .countdown div{
+    
+        font-size:17px;
+    }
+
+    .countdown span{
+      
+        font-size:17px;
+    }
+
+    .input1{
+        display:block;
+    }
+
+    .input1 input{
+        width: 18em;
+        color:#fff;
+        font-weight: bold;
+        outline: none;
+        margin-top: 1.2em;
+        height: 5vh;
+        border-color:#fff ;
+        background-color: transparent;
+    }
+
+}
+
+@media(max-height:600px){
+
+    img{
+        height:19%;
+    }
+
+   .landing h1{
+        font-size:1rem;
+        padding-bottom:20px;
+    }
+
+    p{
+        
+        font-size:1rem;
+        font-weight:bold;
+    }
+
+   
+
+
+}
+
+
+@media(max-height:360px){
+
+    img{
+        height:25%;
+    }
+
+   .landing h1{
+        font-size:1rem;
+        padding-bottom:20px;
+    }
+
+    p{
+        
+        font-size:1rem;
+        font-weight:bold;
+    }
+.heading{
+    font-size: 1rem;
+}
+   
+.input1 input{
+    width: 18em;
+    color:#fff;
+    font-weight: bold;
+    outline: none;
+    margin-top: 1.2em;
+    height: 5vh;
+    border-color:#fff ;
+    background-color: transparent;
+}
+
+}
+
+/*  */
